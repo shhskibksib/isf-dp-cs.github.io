@@ -33,7 +33,8 @@ h2{
 }
 
 .markdown code {
-    background: #e7e7e7;
+    background: var(--code);
+    color: var(--codetext);
 
 }
 
@@ -43,7 +44,7 @@ h2{
 
 
 .book-menu .book-menu-content{
-    background-color: transparent;
+    background-color: var(--menu-background);
 }
 
 

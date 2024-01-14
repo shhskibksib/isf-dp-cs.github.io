@@ -1,20 +1,41 @@
 :root {
-    --light: #faf8f8;
-    --dark: #141021;
-    --secondary: #28787b;
-    --tertiary: #308d53;
-    --visited: #92b4c9;
-    --primary: #f28482;
-    --gray: #222222;
-    --lightgray: #f0f0f0;
-    --outlinegray: #cecece;
-    --million-progress-bar-color: var(--secondary);
-    --highlighted: #8446ff88;
-    --header: #457548;
-    --title: #355A37;
-    --scrollbar: rgb(182, 191, 187);
-    --scrollbar-track: #DDD;
+    --light: #fcf8ee;
+    --dark: #272640; //headings, bolded text
+    --secondary: #514cb9; //right menu, menu # links, expand outline, hyperlinks
+    --tertiary: #514cb9; //selected left menu item, hover color for all menus and title
+    --visited: #fa0505; //unused by theme?
+    --primary: #514cb9; //copy button outline when hovering
+    --gray: #504a6b; //text
+    --code: #24273a;  //backtick keywords background
+    --codetext: #fcf8ee; //backtick keywords text
+    --lightgray: #ddd6c5; //backtick keyword in right menu, copy button for code
+    --outlinegray: #312244; //lines between sections and at end of page
+    --million-progress-bar-color: var(--secondary); //unused by theme?
+    --highlighted: #fa0505; //unused by theme?
+    --header: #272640; //header
+    --menu-background:  #fcf8ee; //left menu background
+    --title: #272640; //left menu main items(non-collapsible)
+    --scrollbar: rgb(182, 191, 187); //i don't think this changes anything
+    --scrollbar-track: #DDD; //i don't think this changes anything
 }
+
+//var(--secondary)
+// $base03:    #002b36;
+// $base02:    #073642;
+// $base01:    #586e75;
+// $base00:    #657b83;
+// $base0:     #839496;
+// $base1:     #93a1a1;
+// $base2:     #eee8d5;
+// $base3:     #fdf6e3;
+// $yellow:    #b58900;
+// $orange:    #cb4b16;
+// $red:       #dc322f;
+// $magenta:   #d33682;
+// $violet:    #6c71c4;
+// $blue:      #268bd2;
+// $cyan:      #2aa198;
+// $green:     #859900;
 
 [saved-theme="dark"] {
     --light: #1b1a1a !important;

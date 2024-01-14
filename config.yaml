@@ -12,6 +12,9 @@ markup:
       unsafe: true
   tableOfContents:
     startLevel: 1
+  highlight:
+    style: catppuccin-macchiato
+
 
 # Multi-lingual mode config
 # There are different options to translate files
@@ -32,7 +35,7 @@ menu:
 params:
 
   name: Ben Cuan
-  title: Making with Code
+  title: ISF DP Computer Science
 
   # OPTIONAL: custom favicon location
   # favicon: 
