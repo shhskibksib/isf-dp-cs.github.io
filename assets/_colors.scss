@@ -6,8 +6,10 @@
     --visited: #fa0505; //unused by theme?
     --primary: #514cb9; //copy button outline when hovering
     --gray: #504a6b; //text
-    --code: #24273a;  //backtick keywords background
-    --codetext: #fcf8ee; //backtick keywords text
+    --code-backtick: #ddd6c5;  //backtick keywords background
+    // --codetext-backtick: #272640; //backtick keywords text
+    --code: #272640;  //code block background
+    --codetext: #ddd6c5; //code block text
     --lightgray: #ddd6c5; //backtick keyword in right menu, copy button for code
     --outlinegray: #312244; //lines between sections and at end of page
     --million-progress-bar-color: var(--secondary); //unused by theme?

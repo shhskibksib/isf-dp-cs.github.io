@@ -1,7 +1,7 @@
 ---
-title: "Book Manager Exercise"
-weight: 10
-
+title: "1. Book Manager"
+weight: 20
+draft: true
 ---
 # Intro Exercises
 
