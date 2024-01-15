@@ -19,9 +19,9 @@ You each have your own repository on Github. Clone your repo and code your solut
 - Type `⌘/Ctrl + 3` to open Quick Access
 - Type `Clone a git repository` and select that option
 - Choose `📝 Clone URI`
-- Paste the following in the URI field:
+- Paste the following in the URI field. Be sure to replace YourGithubUsername with your actual github username:
 ```shell
-https://github.com/HouariZegai/Calculator.git
+https://github.com/isf-dp-cs/JavaPracticeExercises-YourGithubUsername
 ```
 - Select Protocol: `https`
 - Fill in your github **Username** and **Password** (the password *should* be a token, but it won't matter here since the repository is public)
