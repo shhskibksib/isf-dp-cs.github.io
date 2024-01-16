@@ -8,18 +8,18 @@ weight: 2
 
 # Intro To Pseudocode
 
-Pseudocode is a language designed by the IB to help you focus on the `logic` of programming, without having to think too much about `syntax`. Although it's designed to be handwritte, we have a handy website that can compile and run pseudocode.
+Pseudocode is a language designed by the IB to help you focus on the `logic` of programming, without having to think too much about `syntax`. Although it's designed to be handwritten, we have a handy website that can compile and run pseudocode.
 
 {{< code-action >}} Open up the [pseudocode compiler](http://ibcomp.fis.edu/pseudocode/pcode.html) in a new tab. You will be using this website to complete the exercises below.
 
 {{< aside "FYI" >}}
-This compiler does not supply any error messages. If your program isn't running, you can visit the [debugging page](/CS11_labs/troubleshooting_pseudocode.html) to help you troubleshoot.
+This compiler does not supply any error messages. If your program isn't running, you can visit the [debugging page]({{< ref "/00_debugging" >}}) to help you troubleshoot.
 {{< /aside >}}
 
 
 ## Variables
-In Pseudocode, all variable names must be written with ***capital letters***. 
->We use a single `=` for variable assignment.
+In Pseudocode, all variable names must be written with **capital letters**. 
+>Use a single `=` for variable assignment.
 >Comments are created using `//`
 
 ```java
@@ -35,8 +35,8 @@ RAINING = false //boolean
 ```
 ### Practice
 
-{{< code-action >}} ***Write pseudocode to convert a given temperature from celcius to fahrenheit.*** 
-The forumula for calculating fahrenheit is ***(temp x 1.8) + 32***
+{{< code-action "Write pseudocode to convert a given temperature from celcius to fahrenheit." >}} 
+The forumula for calculating fahrenheit is **(temp x 1.8) + 32**
 
 Here is an example interaction:
 
@@ -65,7 +65,7 @@ end if // this is required
 
 ### Practice
 
-{{< code-action >}} ***Write pseudocode to tell someone what generation they are in.*** 
+{{< code-action "Write pseudocode to tell someone what generation they are in." >}}  
 
 You can determine someone's generation using the following formula:
 
@@ -106,7 +106,7 @@ end if
 output "The animal is: ", TYPE
 ```
 ### Practice
-{{< code-action >}} ***Copy the code above and use it as starter code. Add in more conditional statements to include:*** 
+{{< code-action "Copy the code above and use it as starter code. Add in more conditional statements to include:" >}} 
 
 | Type | Criteria | 
 |:-----|:------------------|

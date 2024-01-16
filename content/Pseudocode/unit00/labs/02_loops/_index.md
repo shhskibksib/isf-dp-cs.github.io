@@ -23,7 +23,7 @@ end loop
 
 ### Practice Auto Loops
 
-{{< code-action Write pseudocode to calculate the numbers in the fibonacci sequence. >}} 
+{{< code-action "Write pseudocode to calculate the numbers in the fibonacci sequence." >}} 
 
 Each number in the fibonacci sequence is the sum of the two previous numbers
 
@@ -55,7 +55,7 @@ end loop
 ```
 ### Practice While Loops
 
-{{< code-action >}} ***Write a guessing game.***  
+{{< code-action "Write a guessing game." >}}
 
 Here is an example interaction:
 ```shell

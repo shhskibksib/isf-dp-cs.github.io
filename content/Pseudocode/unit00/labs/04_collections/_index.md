@@ -13,21 +13,6 @@ This page contains information and coding exercises for `collections`.
 
 ## Examples of how to use Collections
 
-### actual java
-
-```java
-public class Main {
-  int x = 5;
-
-  public static void main(String[] args) {
-    Main myObj1 = new Main();  // Object 1
-    Main myObj2 = new Main();  // Object 2
-    System.out.println(myObj1.x);
-    System.out.println(myObj2.x);
-  }
-}
-```
-
 ### Creating a new Collection
 ```java
 NAMES = new Collection()
@@ -66,11 +51,11 @@ end loop
 
 ### Exercise 1: Typhoon Warning System
 
-{{< code-action >}}
-  - [ ] ***Create a collection***
-  - [ ] ***Add 10 windspeeds to it***
-  - [ ] ***Loop through the collection***  
-  - [ ] ***For each windspeed, tell the user which signal is hoisted***  
+{{< code-action "Write a program that determines the warning signal based on windspeed" >}}
+  1. Create a collection
+  2. Add 10 windspeeds to it
+  3. Loop through the collection  
+  4. For each windspeed, tell the user which signal is hoisted  
 
 | Code | Windspeed| 
 |:-----|:------------------|
@@ -93,7 +78,7 @@ T8
 T3
 ```
 
-{{< code-action Now add in a variable to keep track of the hour. Output the hour along with the typhoon signal.>}}
+{{< code-action "Now add in a variable to keep track of the hour. Output the hour along with the typhoon signal." >}}
 
 ```shell
 Hour 1 T3
@@ -116,12 +101,11 @@ output "hello", FRIEND
 
 ### Exercise 2: Dividing Teams
 
-{{< code-action >}}
- ***You want to create two teams of students by alternating through the collection of names***
-  - [ ] ***Create a collection***
-  - [ ] ***Add 10 students to it***
-  - [ ] ***Output team one***
-  - [ ] ***Output team two***
+{{< code-action "Create two teams of students by alternating through the collection of names" >}}
+  1. Create a collection
+  2. Add 10 students to it
+  3. Output team one
+  4. Output team two
 
 Here is an example:
 ```java

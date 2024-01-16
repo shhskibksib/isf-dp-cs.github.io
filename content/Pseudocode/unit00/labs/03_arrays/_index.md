@@ -62,46 +62,47 @@ end loop
 ## Practice Exercises
 
 
-### Exercise 1: Checking an Array
+### Exercise 1: Searching
 
-{{< code-action >}}
->  - [ ] ***Create an array with 10 numbers***
->  - [ ] ***Get user input***
->  - [ ] ***Check whether user input is in the array***  
->
->Here are two example interactions:
->```
+{{< code-action "Search through an Array to find the user input.">}} 
+  1. Create an array with 10 numbers
+  2. Get user input
+  3. Check whether the user input is in the array
+
+Here are two example interactions:
+
+```shell
 Input a number
 >>> 3
 Not in the array
->```
->
->```
+```
+
+```shell
 Input a number
 >>> 9
 In the array
->```
+```
 
 ### Exercise 2: Sorted/Unsorted
 
-{{< code-action >}}
->  - [ ] ***Create an array with 10 numbers***
->  - [ ] ***Output whether user array is sorted or not***  
->
->Here are two arrays you can use to test your code:
->```
+{{< code-action "Check whether an array is sorted.">}} 
+1. Create an array with 10 numbers
+2. Output whether user array is sorted or not 
+
+Here are two arrays you can use to test your code:
+```shell
 UNSORTED = [32,43,55,31,29,45,46,55,60,99]
 SORTED = [19,21,25,27,30,35,37,41,42,50]
->```
+```
 
 ### Exercise 3: Movie Ratings
 
-{{< code-action >}}
-  - [ ] ***Create 3 empty arrays: BAD, GOOD, and MID***
-  - [ ] ***Get the user to input the title of a movie and 1-5 star rating for the movie***
-  - [ ] ***Get the user to input a 1-5 star rating for the movie***
-  - [ ] ***Add the movie title to one of the arrays, based on its rating***  
-  - [ ] ***After the user has added 5 movies, print out the arrays***
+{{< code-action "Categorize the movies into arrays based on their ratings." >}} 
+  1. Create 3 empty arrays: BAD, GOOD, and MID
+  2. Get the user to input the title of a movie and 1-5 star rating for the movie
+  3. Get the user to input a 1-5 star rating for the movie
+  4. Add the movie title to one of the arrays, based on its rating
+  5. After the user has added 5 movies, print out the arrays
 
 Here is an example interaction:
 ```shell
