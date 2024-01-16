@@ -1,7 +1,7 @@
 ---
 title: "Eclipse Setup" 
 bookFlatSection: true
-weight: 1
+weight: 10
 # bookCollapseSection: true
 # draft: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Pseudocode"
-weight: 1
+weight: 10
 bookFlatSection: false 
 bookCollapseSection: true 
 

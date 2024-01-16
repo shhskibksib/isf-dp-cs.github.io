@@ -1,6 +1,6 @@
 ---
 title: "Java"
-weight: 2
+weight: 20
 bookFlatSection: false #this makes it so this page isn't seen
 bookCollapseSection: true
 ---
