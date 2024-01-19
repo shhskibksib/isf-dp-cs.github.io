@@ -21,7 +21,7 @@ You each have your own repository on Github. Clone your repo and code your solut
 - Choose `📝 Clone URI`
 - Paste the following in the URI field. Be sure to replace YourGithubUsername with your actual github username:
 ```shell
-https://github.com/isf-dp-cs/JavaPracticeExercises-YourGithubUsername
+https://github.com/isf-dp-cs/JavaPracticeExercises_YourGithubUsername
 ```
 - Select Protocol: `https`
 - Fill in your github **Username** and **Password** (the password *should* be a token, but it won't matter here since the repository is public)
