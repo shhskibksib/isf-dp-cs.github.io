@@ -37,11 +37,11 @@ The Book Manager lets users create digital bookshelves and store books in them, 
 
 ----
 
-## [1] Create the BookShelf class
+## [3] Create the BookShelf class
 
 ![this stuff](https://lucid.app/publicSegments/view/9f98044e-119d-4224-a6eb-a674f6b99e6a/image.png)
 
-## [1] Test your BookShelf Class
+## [4] Test your BookShelf Class
 💻 Create a `main()` method and do the following:
 
   1. Create the shelves **Horror**, **Stephen King**, and **Want to Read**
