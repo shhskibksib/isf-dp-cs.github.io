@@ -1,48 +1,67 @@
 ---
-title: "1. Book Manager"
+title: "1. Book Manager Part 1"
 weight: 20
-draft: true
+# draft: true
 ---
-# Intro Exercises
+# Book Manager
 
-## Overview
-The Book Manager lets users create digital bookshelves and sort books onto them, sort of like [Goodreads](https://www.goodreads.com/)
+The Book Manager lets users create digital bookshelves and store books in them, sort of like [Goodreads](https://www.goodreads.com/)
 
 ![Diagram](https://lucid.app/publicSegments/view/dda5e171-8e0a-48df-8f64-34fa944a9a49/image.png)
 
 
-## UML
+<!-- ## UML -->
 
-Here is the UML for this assignnment. If you would like to view it on its own, [click here](https://lucid.app/publicSegments/view/33ba1431-02d7-4cbe-87a7-4cc7c1597547/image.png)
+<!-- Here is the UML for this assignnment. If you would like to view it on its own, [click here](https://lucid.app/publicSegments/view/33ba1431-02d7-4cbe-87a7-4cc7c1597547/image.png) -->
 
-![this stuff](https://lucid.app/publicSegments/view/33ba1431-02d7-4cbe-87a7-4cc7c1597547/image.png)
+<!-- ![this stuff](https://lucid.app/publicSegments/view/33ba1431-02d7-4cbe-87a7-4cc7c1597547/image.png) -->
 
-## Details about some Classes
+## [0] Create the Book class
 
-### User 
+![this stuff](https://lucid.app/publicSegments/view/2d178057-6f38-4ebe-aa5d-ae29cca5ca47/image.png)
 
-#### printUserInfo()
-This method should print out the username and the labels of all of their bookshelves.
+## [1] Test your Book Class
+💻 Create a `main()` method and do the following:
+
+  1. Create the book **Joyland** by **Emily Schultz**
+  2. Updat the author to **Stephen King**
+  3. Update the title to **It**
+  4. Print the updated information using `printInfo()`
+  5. Give the book 3 different ratings
+  6. Attempt to rate the book using 0 and 6 and verify that the rating was not added
+  7. Get the average rating and ensure it is correct
+  8. Add the book to the bookshelves **Horror**, **Stephen King**, and **Want to Read**
+  9. Attempt to add the bookshelf **Want to Read** a second time and verify that the bookshelf was not added
+  10. Delete a bookshelf and then add a new one
+  11. Print the updated information using `printInfo()`
+
+----
+
+## [1] Create the BookShelf class
+
+![this stuff](https://lucid.app/publicSegments/view/9f98044e-119d-4224-a6eb-a674f6b99e6a/image.png)
+
+## [1] Test your BookShelf Class
+💻 Create a `main()` method and do the following:
+
+  1. Create the shelves **Horror**, **Stephen King**, and **Want to Read**
+  2. Create a book and add it to all the shelves
+  3. Use `printInfo()` and `printBooks()` to be sure the book has been added to every shelf
+  4. Add so many books to a BookShelf that it is forced to copy its data to a new larger array, and verify that it was successful 
+  5. Remove some books from some shelves
+  6. Use `printInfo()` and `printBooks()`to be sure the bookshelf has been removed from the book and the book has been removed from each shelf
+  7. Get the average rating and ensure it is correct
+
+
+
+<!-- 
 
 ### Bookshelf
 
-#### addBooks()
-When a book is added to the bookshelf, this method should ***also*** add the shelf's label into the Book's `bookshelves` list.
+
 
 #### printBooks()
-This method should print out all the titles of the books on the bookshelf.
 
-### Book
-
-#### bookshelves
-A book can be on multiple bookshelves at once (for example, it might be on your `Horror bookshelf`, your `Stephen King Bookshelf` and your `Want to Read` bookshelf). The bookshelves attribute shouls store the `labels` of the bookshelves it's on.
-
-#### rating
-The rating should be an integer. The default rating should be -1.
-
-
-#### printInfo()
-This method should print out the title, author, and rating for the book. If a rating is -1, print that the book has not yet been rated.
 
 ## Extensions
 
@@ -64,4 +83,4 @@ If a user wants to set the rating to something negative, or something over 5, yo
 If you want to remove a book from a bookshelf, consider all the places that must be updated.
 
 ### Delete bookshelves
-If you want to delete bookshelves, first make sure that they are empty.
+If you want to delete bookshelves, first make sure that they are empty. -->
