@@ -5,9 +5,7 @@ weight: 40
 ---
 # Melodify Part 1
 
-Melodify is a song streaming service that you stores songs. It stores lots of songs, and allows user to stream them
-
-
+Melodify mimics a service that stores a huge database of songs.
 
 ## [0] Setup
 
@@ -235,7 +233,9 @@ Right now, the Melodify class has an array called `allSongs` that contains all t
 
 💻 Write a new method `sortPopularity` that sorts `allSongs` by popularity score in descending order (most popular first). This method has access to `allSongs` so it does not need any parameters or to return anything.
 
-### ⤵️ Sort by Tempo
+### ⤵️ Sort by Valence
 > Note: Use Selection Sort for this method  
 
-💻 Write a new method `sortTempo` that sorts `allSongs` by the tempo of the songs in ascending order (slowest first). It should take one parameter, a string, the title of the song. It should print out all the details of the song, or print an appropriate error message.
+Valence is a measure of how "happy" a song sounds. 
+
+💻 Write a new method `sortValence` that sorts `allSongs` by the valence of the songs in ascending order (lowest values first). It should take one parameter, a string, the title of the song. It should print out all the details of the song, or print an appropriate error message.
