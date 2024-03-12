@@ -20,6 +20,7 @@ This is a continuation of  Melodify Part 1. Only continue if you have completed 
 
 ## 🔎 Search for Mellow songs
 > Note: Use Binary Search for this method 
+> Alternately, try the Recursive Binary Search! It works the same way, but you cannot use a loop. Instead, use recursion!
 
 Imagine that the user wants to create a mellow playlist that only contains songs that aren't super happy. To do this, the user wants only songs that are between  0.30 - 0.60 valence level.
 
@@ -32,6 +33,7 @@ Imagine that the user wants to create a mellow playlist that only contains songs
 
 ## 🫧 Search for Popular songs
 > Note: Use Binary Search for this method 
+> Alternately, try the Recursive Binary Search! It works the same way, but you cannot use a loop. Instead, use recursion!
 
 This user found that she likes to listen to popular songs, but avoid **extremely** popular songs. If the popularity score is above 89, it is on the radio too much and she is sick of it, but if it is below 60, she doesn't know it. 
 
@@ -40,3 +42,4 @@ Also, she doesn't like to listen to explicit music, so make sure if the song is 
 💻 Write a new method `makePopularPlaylist`. This method uses binary search to find all the songs that have a popularity between 60 - 89 (inclusive). Remember that in order for binary search to work, the array must first be sorted. Utlilize `sortPopularity` from the previous exercise.
 
 💻 All the non-explicit songs that match her critieria should be added to a new array, `popularPlaylist`, which should be returned.
+
