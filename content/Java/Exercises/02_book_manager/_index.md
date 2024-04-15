@@ -5,9 +5,18 @@ weight: 20
 ---
 # Book Manager
 
+{{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}
+- OOP
+- One-to-many relationships with Objects
+- Arrays
+- Error handling
+{{< /expand >}}
+
 The Book Manager lets users create digital bookshelves and store books in them, sort of like [Goodreads](https://www.goodreads.com/)
 
 ![Diagram](https://lucid.app/publicSegments/view/dda5e171-8e0a-48df-8f64-34fa944a9a49/image.png)
+
+
 
 
 <!-- ## UML -->

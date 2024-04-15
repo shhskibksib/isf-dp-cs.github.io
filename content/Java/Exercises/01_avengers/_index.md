@@ -6,6 +6,14 @@ weight: 10
 
 # Superhumans Class
 
+{{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}
+- OOP
+- One-to-many relationships with Objects
+- Java LinkedLists
+- Random library
+- Looping through list of objects
+{{< /expand >}}
+
 ## [0] Create the Superhuman class based on the specs below
 
 

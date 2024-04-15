@@ -4,8 +4,16 @@ weight: 40
 # draft: true
 ---
 # Melodify Part 1
+{{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}
+- OOP
+- Arrays of objects
+- Sequential Search
+- Bubble Sort
+- Selection Sort
+{{< /expand >}}
 
 Melodify mimics a service that stores a huge database of songs.
+
 
 ## [0] Setup
 

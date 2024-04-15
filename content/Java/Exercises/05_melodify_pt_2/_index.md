@@ -15,8 +15,13 @@ Recommendations: Get playlists/tracks from user. get average tempo/valence/etc (
 
 # Melodify Part 2
 
-This is a continuation of  Melodify Part 1. Only continue if you have completed Part 1.
+{{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}
+- OOP
+- Binary Search
+- Recursive Binary Search
+{{< /expand >}}
 
+This is a continuation of  Melodify Part 1. Only continue if you have completed Part 1.
 
 ## 🔎 Search for Mellow songs
 > Note: Use Binary Search for this method 

@@ -9,6 +9,12 @@ The Book Manager lets users create digital bookshelves and store books in them, 
 
 Only begin Part 2 if you have finished and tested Part 1
 
+{{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}
+- OOP
+- One-to-many relationships with Objects
+- Error handling
+{{< /expand >}}
+
 ![Diagram](https://lucid.app/publicSegments/view/dda5e171-8e0a-48df-8f64-34fa944a9a49/image.png)
 
 
