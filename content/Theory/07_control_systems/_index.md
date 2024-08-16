@@ -1,11 +1,16 @@
 ---
-title: "Control Systems"
-weight: 50
+title: "➡️ Control Systems"
+weight: 09 #temporarily put first
 # bookFlatSection: false
 # bookCollapseSection: true
 ---
 
 # Control Systems
+
+## Homework
+1️⃣ Watch this [video](https://www.youtube.com/watch?v=9JqlnBRc3eI) from CS Classroom (24 mins). Take thorough notes.  
+2️⃣ Bring your notes to class.    
+3️⃣ Write down any lingering questions you have.
 
 ## Review Tools
 [Topic 7 Revision](https://www.computersciencecafe.com/topic-7-revision-ib.html) from Computer Science Cafe.
