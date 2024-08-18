@@ -1,7 +1,7 @@
 ---
 title: Methods
 weight: 6
-# draft: true
+draft: true
 ---
 
 # Methods

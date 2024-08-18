@@ -1,7 +1,7 @@
 ---
 title: Arrays
 weight: 4
-# draft: true
+draft: true
 ---
 # Arrays
 

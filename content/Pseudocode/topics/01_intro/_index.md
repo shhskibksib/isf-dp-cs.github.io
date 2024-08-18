@@ -10,10 +10,13 @@ weight: 2
 
 Pseudocode is a language designed by the IB to help you focus on the `logic` of programming, without having to think too much about `syntax`. Although it's designed to be handwritten, we have a handy website that can compile and run pseudocode.
 
-{{< code-action >}} Open up the [pseudocode compiler](http://ibcomp.fis.edu/pseudocode/pcode.html) in a new tab. You will be using this website to complete the exercises below.
+{{< code-action >}} Choose one of these two compilers you can use for pseudocode:   
+ > [This compiler is more forgiving](https://ibps.inandioglu.com/). I suggest you start here. Careful, because it will allow you to use Python syntax. Don't fall into that trap!     
+
+ > [This pseudocode compiler](http://ibcomp.fis.edu/pseudocode/pcode.html) is more strict, and won't run at all if you don't use the right syntax. 
 
 {{< aside "FYI" >}}
-This compiler does not supply any error messages. If your program isn't running, you can visit the [debugging page]({{< ref "/00_debugging" >}}) to help you troubleshoot.
+The more strict compiler does not supply any error messages. If your program isn't running, you can visit the [debugging page]({{< ref "/00_debugging" >}}) to help you troubleshoot.
 {{< /aside >}}
 
 
