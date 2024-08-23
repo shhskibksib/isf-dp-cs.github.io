@@ -12,11 +12,24 @@ This page contains information and coding exercises for `arrays`.
 
 ## Examples of how to use Arrays
 
+### Creating Arrays
+```java
+// new array without data
+MYSTUFF[8]
+
+// new array with data
+COLORS = ["aqua","crimson","mauve","rust","taupe","jade","navy", "lemon"]
+```
+
 ### Adding to Arrays
 ```java
-// Example of an auto loop
-loop VAR from 1 to 10
-   output VAR
+// make empty array of size 10
+EVEN_NUMS[10]
+
+// loop to create each index
+loop I from 0 to 9
+   // add to array
+   EVEN_NUMS[I] = I*2
 end loop
 ```
 
@@ -45,17 +58,6 @@ MONTHS = ["January","February","March","April","May","June","July", "August", "S
 
 loop INDEX from 0 to MONTHS.length-1
     output MONTHS[INDEX]
-end loop
-```
-
-```java
-// Using a while loop with an array
-MONTHS = ["January","February","March","April","May","June","July", "August", "September","October","November","December"]
-
-INDEX = 0
-loop while MONTHS[INDEX] != null
-    output MONTHS[INDEX]
-    INDEX = INDEX + 1
 end loop
 ```
 
@@ -126,11 +128,14 @@ What is the title of the movie?
 >>> Morbius
 What is your rating? (1-5)
 >>>1
+```
+```shell
 >
-BAD movies 
+---BAD movies---
 Morbius
-MID movies
+---MID movies---
 Aladdin,Winnie the Pooh
-GOOD movies
+---GOOD movies---
 Oppenheimer,Barbie
->```
+>
+```
