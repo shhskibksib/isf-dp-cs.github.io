@@ -15,7 +15,7 @@ This page contains information and coding exercises for `arrays`.
 ### Creating Arrays
 ```java
 // new array without data
-MYSTUFF[8]
+MYSTUFF = []
 
 // new array with data
 COLORS = ["aqua","crimson","mauve","rust","taupe","jade","navy", "lemon"]
@@ -23,8 +23,8 @@ COLORS = ["aqua","crimson","mauve","rust","taupe","jade","navy", "lemon"]
 
 ### Adding to Arrays
 ```java
-// make empty array of size 10
-EVEN_NUMS[10]
+// make empty array
+EVEN_NUMS = []
 
 // loop to create each index
 loop I from 0 to 9
@@ -71,14 +71,15 @@ end loop
   2. Get user input
   3. Check whether the user input is in the array
 
-Here are two example interactions:
-
+Here are two example interactions for this array:
+```python
+NUMS = [20, -1, 9, 4, 9, 30]
+```
 ```shell
 Input a number
 >>> 3
 Not in the array
 ```
-
 ```shell
 Input a number
 >>> 9
