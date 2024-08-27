@@ -11,7 +11,7 @@ This page contains information and coding exercises for `collections`.
 
 {{< code-action >}} Open up the [pseudocode compiler](http://ibcomp.fis.edu/pseudocode/pcode.html) in a new tab. You will be using this website to complete the exercises below.
 
-## Examples of how to use Collections
+## Examples
 
 ### Creating a new Collection
 ```java
@@ -29,10 +29,10 @@ NAMES.addItem("Lucy")
 
 ### Important collection methods
 ```java
-MYCOLLECTION.resetNext() // sets you at the beginning of the collection
-MYCOLLECTION.hasNext() // checks if you are at the end of the collection. returns true/false
-MYCOLLECTION.getNext() // moves to the next item in the collection. returns the next item
-MYCOLLECTION.contains(THING) // checks if a thing is in the collection
+MYCOLLECTION.resetNext() // go back to the start of the collection
+MYCOLLECTION.hasNext() // checks if there are any elements left. returns true/false
+MYCOLLECTION.getNext() // returns the next item in the collection
+MYCOLLECTION.contains(THING) // checks if THING is in the collection
 MYCOLLECTION.remove(THING) // removes a thing to the collection
 ```
 
