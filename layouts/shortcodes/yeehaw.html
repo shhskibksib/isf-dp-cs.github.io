@@ -1,0 +1,11 @@
+<blockquote class="book-hint danger" style="padding-top: 20px; padding-bottom: 10px; 
+border-color: rgb(85, 33, 8); background-color: rgb(236, 175, 146); color:rgb(85, 33, 8);">
+    <strong class="markdown-inner">🏜🐄🌵 {{ .Get 0 }} </strong> 
+  <br>
+<p class="markdown-inner">
+{{ if .Inner }}
+  {{ .Inner | markdownify }}
+{{ else }}
+{{ end }}
+</p>
+</blockquote>
