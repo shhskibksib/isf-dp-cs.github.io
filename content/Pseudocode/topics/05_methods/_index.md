@@ -61,7 +61,7 @@ MYSTORY = MYSTORY + NAME
 Here are some examples you can use:
 
 ```java
-ARR = [ "In", "the", "adjective", "of", "the", "blazing", "noun". ]
+ARR = [ "In", "the", "adjective", "of", "the", "blazing", "noun" ]
 ```
 ```java
 ARR = [ "In", "the", "adjective", "of", "the", "blazing", "noun", ",", "there", "lived", "a", "noun", "named", "Dusty", "Jake",

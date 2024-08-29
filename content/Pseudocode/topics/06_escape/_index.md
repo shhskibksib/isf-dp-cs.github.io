@@ -63,6 +63,7 @@ NUM = 5 mod 2
  🏜🐄🌵
 {{< /yeehaw >}}
 
+## Hints
 ### Room #1
 
 {{< expand "Hint #1" >}}
@@ -84,7 +85,7 @@ Output the `key word`.
 
 ---
 
-## Room #2
+### Room #2
 
 {{< expand "Hint #1" >}}
 caesar cypher
@@ -114,7 +115,7 @@ etc...
 
 ---
 
-## Room #3
+### Room #3
 
 {{< expand "Hint #1" >}}
 count how many times each letters is in the text

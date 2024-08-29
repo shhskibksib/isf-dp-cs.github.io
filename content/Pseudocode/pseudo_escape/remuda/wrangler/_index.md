@@ -1,7 +1,7 @@
 ---
 weight: 3
 bookCollapseSection: true
-title: "Example Site"
+title: "Kitchen"
 bookHidden: true
 # draft: true
 ---
