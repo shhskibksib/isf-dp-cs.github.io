@@ -124,3 +124,38 @@ count how many times each letters is in the text
 {{< expand "Hint #2" >}}
 print out letters that only happen once in the message
 {{< /expand >}}
+
+---
+
+
+## Extension - Past Exam Question
+
+
+A program is developed to simulate the roll of dice in a game.
+Three dice are thrown, with faces that have numbers from 1 to 6.
+The dice are thrown seven times, and the data are stored in a two-dimensional array called `DICEDIAL` (see Figure 2).   
+
+**Figure 2: The example data stored in the `DICEDIAL` array**
+ {{< figure src="images/courses/java/dice_array.png" width="30%">}}
+
+ 
+#### (a) 💻 Construct an algorithm in pseudocode to calculate the sum of all values stored in the `DICEDIAL` array.
+
+---
+ 
+The sub-program `DuplicateNum(DICEDIAL,R)` checks whether there are repeated numbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the repeated number.
+The DuplicateNum() sub-program will produce the following from the values used in Figure 2:
+
+`DuplicateNum(DICEDIAL,0)` returns 2   
+`DuplicateNum (DICEDIAL,1)` returns 4   
+`DuplicateNum(DICEDIAL,2)` returns 0   
+
+#### (b) 💻 Construct an algorithm in pseudocode for the sub-program `DuplicateNum(DICEDIAL,R)`.   
+
+ ---
+
+
+The sub-program `highestRT(DICEDIAL)` accepts the `DICEDIAL` array and outputs the highest row total and the indexes of all the rows with that total.   
+From the example data given in Figure 2, `highestRT(DICEDIAL)` would output that the highest row total is 16, and it occurs in the rows with indexes 3 and 4.   
+#### (c) 💻 Construct an algorithm in pseudocode for the sub-program `highestRT(DICEDIAL)`.   
+
