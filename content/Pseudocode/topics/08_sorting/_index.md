@@ -48,7 +48,8 @@ Using the example code, use the `Bubble Sort` algorithm to sort the array. If yo
 
 ## Improving your Bubble Sort
 
-{{< code-action "Create an method called `swap()` that can swap two numbers in an array" >}}     
+{{< code-action "Create a method called `swap()` that can swap two numbers in an array" >}}     
+
 **Parameters:** `position1`, `position2`, `array`        
 **Return:** updated `array`
  
@@ -57,16 +58,24 @@ Using the example code, use the `Bubble Sort` algorithm to sort the array. If yo
 
 **Now use your `swap` to improve your sorting**
 
-{{< code-action "Create a method called `bubbleSort`" >}}     
+{{< code-action "Convert your bubble sort code into a method called `bubbleSort`" >}}     
+
 **Parameter:** an array of numbers          
 **Return:** a sorted array of numbers    
 1. Sorts the array
 2. Everytime a swap is required, it should use `swap()` 
 
-## Convert to Method
+## Selection Sort
+Now you will move on to the next sorting algorithm.
 
-{{< code-action "Put your `bubbleSort` code into a method" >}}
+{{< code-action "Create a method called `selectionSort`" >}}   
 
+**Parameter:** an array of numbers          
+**Return:** a sorted array of numbers    
+1. Sorts the array
+2. Everytime a swap is required, it should use `swap()` 
+
+You should be able to use the same starter code to test your `selectionSort`
 
 ## Deliverables
 
@@ -77,10 +86,17 @@ Complete the [Exit Ticket](https://docs.google.com/forms/d/e/1FAIpQLScgcYSCyOc-9
 
 {{< /deliverables >}}
 
-### Extension
+## Extensions
 
-{{< code-action >}} **Sort by new things, such as** 
+### Sort by Alphabetical Order
 
-- Alphabetical
-- Textbook ordering 
+{{< code-action >}} **Create a helper method that can tell which word should come first alphabetically, and returns `true`/`false`. Then adapt one of your sorting algorithms to use this helper method**
 
+### Sort by Textbook ordering 
+Textbooks are ordered in a strange way. The numbers in a textbook chapter might be numbered like this:
+
+```shell
+[1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14]
+```
+
+{{< code-action >}} **Create a helper method that can tell which number is higher and return `true`/`false`. Then adapt one of your sorting algorithms to use this helper method.**
