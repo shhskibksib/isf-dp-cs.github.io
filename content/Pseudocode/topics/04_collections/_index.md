@@ -1,7 +1,7 @@
 ---
 title: Collections
-weight: 5
-draft: true
+weight: 10
+# draft: true
 
 ---
 
@@ -39,17 +39,18 @@ MYCOLLECTION.remove(THING) // removes a thing to the collection
 ### Looping through a Collection
 
 ```java
-// Using an while loop with an array
-MYCOLLECTION.resetNext()
-loop while MYCOLLECTION.hasNext()
-    THING = MYCOLLECTION.getNext()
-    output NAME
+MYCOLLECTION.resetNext() // go to the start of the collection
+loop while MYCOLLECTION.hasNext() // keep looping if there are more elements
+    THING = MYCOLLECTION.getNext() // access the item stored in the collection
+    output THING // so something with the item you accessed
 end loop
 ```
 
 ## Practice Exercises
 
 ### Exercise 1: Typhoon Warning System
+
+Imagine that we want to store the hourly windspeed during a typhoon into a collection.
 
 {{< code-action "Write a program that determines the warning signal based on windspeed" >}}
   1. Create a collection
@@ -78,7 +79,7 @@ T8
 T3
 ```
 
-{{< code-action "Now add in a variable to keep track of the hour. Output the hour along with the typhoon signal." >}}
+{{< code-action "Now add in a variable to keep track of the hour. Output the hour along with the typhoon signal." >}} 
 
 ```shell
 Hour 1 T3
@@ -130,3 +131,11 @@ TEAM 2
 - Kim
 - Lucy
 ```
+
+### Exercise 3: 
+
+A company has 600 employees whose names are currently stored using a collection called NAMES. The names are stored as surname, first name. For example: Smith, Jane, Uysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …
+
+{{< code-action "Construct a pseudocode algorithm that will store the surnames in one array and first names in another." >}}
+
+**Output both arrays at the end**
