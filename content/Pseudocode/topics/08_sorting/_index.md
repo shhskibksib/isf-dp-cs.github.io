@@ -45,6 +45,19 @@ output "------After sorting------"
 
 Using the example code, use the `Bubble Sort` algorithm to sort the array. If you are unsure how to begin, use the **provided  checklist** to help.
 
+{{< expand "Answer" >}}
+```java
+loop I from 0 to NUMS.length-1
+    loop J from 0 to NUMS.length-2
+      if NUMS[J]>NUMS[J+1] then
+        TEMP = NUMS[J]
+        NUMS[J] = NUMS[J+1]
+        NUMS[J+1] = TEMP
+      end if
+    end loop
+end loop
+```
+{{< /expand >}}
 
 ## Improving your Bubble Sort
 
@@ -56,6 +69,17 @@ Using the example code, use the `Bubble Sort` algorithm to sort the array. If yo
 1. Swap the items at position1 and position2
 2. Return the updated array
 
+{{< expand "Answer" >}}
+```java
+method swap(position1, position2, array)
+    TEMP = array[position2]
+    array[position2] = array[position1]
+    array[position1] = TEMP
+    return array
+end method
+```
+{{< /expand >}}
+
 **Now use your `swap` to improve your sorting**
 
 {{< code-action "Convert your bubble sort code into a method called `bubbleSort`" >}}     
@@ -64,6 +88,21 @@ Using the example code, use the `Bubble Sort` algorithm to sort the array. If yo
 **Return:** a sorted array of numbers    
 1. Sorts the array
 2. Everytime a swap is required, it should use `swap()` 
+
+{{< expand "Answer" >}}
+```java
+method bubbleSort(ARRAY)
+  loop I from 0 to ARRAY.length-1
+      loop J from 0 to ARRAY.length-2
+        if ARRAY[J]>ARRAY[J+1] then
+          ARRAY = swap(J, J+1, ARRAY)
+        end if
+      end loop
+  end loop
+  return ARRAY
+end method
+```
+{{< /expand >}}
 
 ## Selection Sort
 Now you will move on to the next sorting algorithm.
@@ -77,6 +116,45 @@ Now you will move on to the next sorting algorithm.
 
 You should be able to use the same starter code to test your `selectionSort`
 
+{{< expand "Answer using swap()" >}}
+```java
+method selectionSort(ARRAY)
+  loop I from 0 to ARRAY.length-1
+     MIN = ARRAY[I] 
+     MIN_INDEX = I
+     loop J from I to ARRAY.length-1 
+       if ARRAY[J]<MIN then
+          MIN = ARRAY[J]
+          MIN_INDEX = J
+       end if
+     end loop
+     ARRAY = swap(I, MIN_INDEX, ARRAY)
+  end loop
+  return ARRAY
+end method
+```
+{{< /expand >}}
+
+{{< expand "Answer without swap()" >}}
+```java
+method selectionSort(ARRAY)
+  loop I from 0 to ARRAY.length-1
+     MIN = ARRAY[I] 
+     MIN_INDEX = I
+     loop J from I to ARRAY.length-1 
+       if ARRAY[J]<MIN then
+          MIN = ARRAY[J]
+          MIN_INDEX = J
+       end if
+     end loop
+     TEMP = ARRAY[I]
+     ARRAY[I] = ARRAY[MIN_INDEX]
+     ARRAY[MIN_INDEX] = TEMP
+  end loop
+  return ARRAY
+end method
+```
+{{< /expand >}}
 ## Deliverables
 
 {{< deliverables >}}

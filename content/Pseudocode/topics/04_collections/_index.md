@@ -132,7 +132,7 @@ TEAM 2
 - Lucy
 ```
 
-### Exercise 3: 
+### Exercise 3: First/Last Names
 
 A company has 600 employees whose names are currently stored using a collection called NAMES. The names are stored as surname, first name. For example: Smith, Jane, Uysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …
 

@@ -11,7 +11,8 @@ This page contains information and coding exercises for all the topics we've cov
 Open up the [pseudocode compiler](http://ibcomp.fis.edu/pseudocode/pcode.html) in a new tab. You will be using this website to complete the exercises below.
 
 {{<aside>}}
-Make sure you are never using `output` or `return` inside an `if` statement! Instead, use a variable to store the `output`/`return` value, and `output`/`return` it at the end.
+Make sure you are never using `output`/`return` inside an `if` statement! ❌       
+Instead, use a variable to store the `output`/`return` value, and `output`/`return` it at the end.✅
 {{</aside>}}
 
 ## Choosing Your Level
@@ -43,11 +44,11 @@ Michaela is on lap 9 and she is super tired
 Michaela is on lap 10 and she is super tired
 Michaela stopped swimming
 ```
+
+---
+
+
 ### 1.2 While Loops practice
-Every so often we have a leap year, which is a year where the month of February has a 29th day. Here is the formula for calculating whether a year is a leap year:
-> If a year is divisible by 4, it is a leap year
-> UNLESS it is also divisible by 100, in which case it is NOT a leap year.
-> But if a year is divisible by 400, then it IS a leap year.
 
 {{< code-action "Write pseudocode that will continually ask the user to enter their name, and then output Hello <name>. The loop should end when the user types “goodbye”.">}} 
 
@@ -63,15 +64,21 @@ What is your name?
 goodbye!
 ```
 
+---
+
+
 ### 1.3 Methods + Conditionals practice
 Every so often we have a leap year, which is a year where the month of February has a 29th day. Here is the formula for calculating whether a year is a leap year:
-> If a year is divisible by 4, it is a leap year
-> UNLESS it is also divisible by 100, in which case it is NOT a leap year.
-> But if a year is divisible by 400, then it IS a leap year.
+> If a year is **divisible by 4**, it is a leap year ✅   
+> UNLESS it is **also divisible by 100**, in which case it is NOT a leap year. ❌      
+> But if a year is **divisible by 400**, then it IS a leap year. ✅     
 
 {{< code-action "Write a method that determines whether or not a year is a leap year.">}} 
-> input: year
-> return: true/false
+> **input:** year    
+> **return:** `true`/`false`  
+
+---
+
 
 ### 1.4 Arrays + Mod practice
 
@@ -81,16 +88,18 @@ Remember, you can use `a mod b` to find the remainder after integer division `a/
 
 {{< code-action "Count up how many occurences there are of multiples of 7 there are in an array. Output the number.">}} 
 
-example:
+
+
+---
 
 
 
 ### 1.5 Arrays + Loops practice
 A PHE teacher wants to divide her students into 3 teams. She’ll do this by assigning them to team 1, team 2, and team 3 as she walks down the line. Write pseudocode that can divide her students into teams using arrays.
 For example, if her students are Abby, Bert, Coco, Daniel , Erika, Fred, Gabby, Hank, and Izzy, the teams will be:
->Team 1: Abby,Daniel,Gabby
->Team 2: Bert,Erika,Hank
->Team 3: Coco,Fred,Izzy
+>**Team 1**: Abby,Daniel,Gabby    
+>**Team 2**: Bert,Erika,Hank    
+>**Team 3**: Coco,Fred,Izzy    
 
 
 
@@ -104,6 +113,9 @@ TEAM3 = ["none","none","none","none"]
 
 // add your loop here
 ```
+
+---
+
 
 ## Level 2
 
