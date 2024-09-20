@@ -3,7 +3,7 @@ title: "Classes"
 bookFlatSection: false
 # weight: 2
 # bookCollapseSection: true
-# draft: true
+draft: true
 ---
 
 # Java Intro
