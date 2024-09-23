@@ -6,9 +6,11 @@ weight: 10
 # draft: true
 ---
 
-<!-- # need toolbox steps added in, and community edition -->
 
 # Java Computer Setup
+
+
+---
 
 <!-- Note: if IntelliJ IDEA is not working for you, you can use [this online compiler](https://www.jdoodle.com/online-java-compiler/) -->
 
@@ -45,12 +47,20 @@ Select your operating system, and choose the installer based on your computer ch
 
 *You can check your processor by opening `About this Mac` in the top left corner of your computer.*
 
-After you've downloaded the installer, run it and follow the prompts.
+{{<code-action "After the download is finished, double click on the installer" >}}
+{{< figure src="images/courses/java/intellijIDEA/java_installer.png" width="20%">}}
+
+{{<code-action "Follow the prompts to finish installing Java" >}}
+{{< figure src="images/courses/java/intellijIDEA/java_installer_done.png" width="45%">}}
+
 
 ---
 
 
 ## [2] Download IntelliJ IDEA
+
+IntelliJ IDEA is the Integrated Development Environment (IDE) that we will be using to edit and run our Java code. It has a lot of built-in features that make Java develpment go as smoothly as possible.
+
 
 {{<code-action "Download IntelliJ IDEA" >}} [here](https://www.jetbrains.com/idea/download/)
 
@@ -58,7 +68,7 @@ Scroll down until you see **Community Edition** and select your processor
 
 {{< figure src="images/courses/java/intellijIDEA/intellij_download.png" width="50%">}}
 
-After the download finishes, launch the installer and follow the prompts to set up `IntelliJ`.
+{{<code-action "Launch the installer and follow the prompts" >}}
 
 
 ---
