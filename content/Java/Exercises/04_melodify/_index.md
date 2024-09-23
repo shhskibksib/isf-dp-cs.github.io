@@ -1,7 +1,7 @@
 ---
 title: "3. Melodify Part 1"
 weight: 40
-# draft: true
+draft: true
 ---
 # Melodify Part 1
 {{< expand "Skills Covered in this Exercise" "click to expand ⬇️" >}}

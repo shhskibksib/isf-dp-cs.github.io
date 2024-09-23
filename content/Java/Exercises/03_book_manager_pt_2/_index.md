@@ -1,7 +1,7 @@
 ---
 title: "2. Book Manager Part 2"
 weight: 30
-# draft: true
+draft: true
 ---
 # Book Manager Part 2
 

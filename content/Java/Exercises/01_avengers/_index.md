@@ -1,7 +1,7 @@
 ---
 title: "0. Superhumans"
 weight: 10
-# draft: true
+draft: true
 ---
 
 # Superhumans Class

@@ -1,7 +1,7 @@
 ---
 title: "5. Patterns"
 weight: 50
-# draft: true
+draft: true
 ---
 
 # Printing Patterns

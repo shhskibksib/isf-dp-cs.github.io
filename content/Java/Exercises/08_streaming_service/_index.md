@@ -1,7 +1,7 @@
 ---
 title: "8. Streaming Service"
 weight: 30
-draft: true
+# draft: true
 ---
 
 # Streaming Service
