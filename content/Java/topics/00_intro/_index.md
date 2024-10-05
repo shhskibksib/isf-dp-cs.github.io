@@ -315,14 +315,90 @@ while (i < 6 && i > 0) {
 
 ---
 
+### Example steps for Wordle
+
+<!-- {{< expand "View the steps to complete Wordle" >}} -->
+<!-- {{< /expand >}} -->
+>**// first some setup**   
+>create variable `yellowBackground`, set to  `\u001b[47;1m`    
+>create variable `greenBackground`, set to  `\u001b[42;1m`   
+>create variable `greyBackground`, set to `\u001b[47;1m`   
+>create variable `reset`, set to `\u001b[0m`   
+>
+>print "Enter a 5-letter word"   
+>create variable `found`, set to `false`   
+>
+>**// begin the guessing**     
+>create variable `i`, set to 0   
+>loop while `i` <= 6 and `found` is `false`   
+>>create variable `input`, set to the user's input  
+>>      
+>>**// let's check if they got it right**     
+>>if `input` is the same as `word`
+>>>  print "Well done! You guessed the word!"   
+>>>  set `found` to `true`
+>>>    
+>> end if    
+>>    
+>>**// we need to format the output string correctly**    
+>>create variable `output` set to an empty string     
+>>      
+>>**//now we loop through each letter to format it correctly**       
+>> loop `j` from 0 to the length of the `input`    
+>>> create variable `wordLetter`, set to the letter from the actual `word`     *// (use `.charAt(j)`)*      
+>>> create variable `guessLetter`, set to the letter from the `input`    *//(use `.charAt(j)`)*       
+>>>create variable `formattedLetter`, set to the `guessLetter` with the grey background    
+>>>    
+>>>**// should the letter be green?**    
+>>>if the letters `wordLetter` and `guessLetter` match    
+>>>>set `formattedLetter` to the `guessLetter` with green background    
+>>>>         
+>>>**// should the letter be yellow?**     
+>>>else      
+>>>> loop `h` from 0 to length of the `word`     
+>>>>create variable `compareLetter`, set to the letter from the `word`  *// (use `.charAt(h)`)*         
+>>>>>if the `compareLetter` matches the `guessLetter`        
+>>>>>>set `formattedLetter` to the `guessLetter` with yellow background      
+>>>>>>         
+>>>>>end if    
+>>>>>       
+>>>>end loop     
+>>>>        
+>>>end if    
+>>>add the `formattedLetter` to the end of the `output` 
+>>>end loop   
+>>>    
+>>print the `output`
+>>increment `i`     
+>>end loop
+
+---
+
 ## [5] Deliverables
 
-{{< deliverables>}}
 
-{{< code-action "Push your code to GitHub." >}} Include a descriptive commit message.
+
+{{< code-action "Push your code to GitHub using the following steps." >}} 
 
 **✋ If you would like teacher feedback, begin your commit message with `#feedback`**
+
+
+{{< deliverables>}}
+{{< code-action "Select Commit from the menu on the left." >}} Select all your updated files. **Be sure to include a descriptive commit message.**
+
+{{< figure src="images/courses/java/git_commit_1.png" width="40%">}}
+{{< code-action "Click Commit and Push" >}} 
+
+{{< figure src="images/courses/java/git_commit_2.png" width="40%">}}
+
+{{< code-action "Click Push" >}}  
+{{< figure src="images/courses/java/git_commit_3.png" width="40%">}}
+
+
+
 {{< /deliverables>}}
+
+
 
 <!-- ---
 
