@@ -1,9 +1,9 @@
 ---
 title: "Intro" 
 bookFlatSection: false
-weight: 1
+# weight: 2
 # bookCollapseSection: true
-# draft: true
+draft: true
 ---
 
 # Java Intro

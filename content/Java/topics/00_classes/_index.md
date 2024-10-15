@@ -1,23 +1,60 @@
 ---
-title: "Classes" 
+title: "OOP" 
 bookFlatSection: false
-# weight: 2
+weight: 2
 # bookCollapseSection: true
-draft: true
+# draft: true
 ---
 
-# Java Intro
+# Object Oriented Programming (OOP)
+This lab introduces the concept of OOP in Java.
 
-## Setup
-- Go to moodle and download `Cat Exercise`
-- Import it into Eclipse
+---
+
+## [0] Setup
 
 
-## Creating an object in Java
+### Clone the Repository
+
+#### 💻 select [`Projects`] > [`Get from VCS`] > [`Repository URL`]
+
+{{< figure src="images/courses/java/intellijIDEA/intellij_repo_url.png" width="50%">}}
+
+
+ 
+{{< code-action "Paste your URL to clone the lab">}} 
+
+Be sure to change `yourgithubusername` to your actual GitHub username.
+
+```shell
+https://github.com/isf-dp-cs/lab_oop_yourgithubusername
+```
+
+---
+
+### Switch to Java 21
+
+
+
+**💻 Select [`File`] > [`Project Structure`]**
+
+{{< figure src="images/courses/java/choose_JDK_1.png" width="50%">}}
+
+<br> 
+
+**💻 From the `SDK:` dropdown, select `Java 21`**
+{{< figure src="images/courses/java/choose_JDK_2.png" width="50%">}}
+
+
+---
+
+## [1] Killing the Cat
+
+First, take a look at the `Cat` class:
 
 ```java
 public class Cat {
-	//atributes
+	//attributes
 	private String name; 
 	private int lives = 9;
 
@@ -38,6 +75,78 @@ public class Cat {
 }
 ```
 
+You can see that there are two attributes (`name` and `lives`) and three methods (the `constructor`, `speak` and `main`).   
+
+The `main` method already creates a `Cat` object and gets it to seak
+
+{{< code-action >}} **Add a `method` that lets the cat introduce itself.** It should print a greeting out to the console, including the cat's name.
+
+{{< code-action >}} **Test your new method by calling it in the `main` method.**
+
+You can see that the cat starts out with 9 lives.    
+{{< code-action >}} **Add a loop to the `main` method that can kill the cat.**
+
+---
+
+## [2] Superhumans
+
+Here is an overview of the Superhuman class. 
+- The `-` symbol means that the `attribute`/`method` is `private` and can be used only inside the class.
+
+- The `+` symbol means the `attribute`/`method` is `public` and can be used outside of this class.
+|   <center>**Superhuman**</center>  |
+|:------------------------|
+  | **--Attributes--** |
+| - name: String    |
+| - age: int        |
+  | **--Methods--** |
+| + Superhuman(String name, int age) |
+| + getName(): returns a String |
+| + setName(String name): returns void |
+| + getAge(): returns an int |
+| + setAge(int age): returns void |
+| + printInfo(): returns void *---this method should print out all the attributes*| 
+
+## Test the Superhuman Class
+
+{{< code-action >}} **In the `main()` method that creates two superhuman objects and prints out their info using the `printInfo` method.**
+
+{{< code-action >}} **Add more steps to `main()` to test out each of the `settter`s. Call `printInfo()` each time, to check that it's working correctly** 
+
+
+## Add new features
+
+{{< code-action >}} **Add in a new attribute, `alias`. Make sure to add the correstponding setters/getters.** 
+
+{{< code-action >}} **Test your additions in the `main` method.**
+
+
+---
+
+## [3] Deliverables
+
+{{< deliverables>}}
+
+### Fill in the Google Form 
+
+[✏️ It can be found here](https://docs.google.com/forms/d/e/1FAIpQLSfb4JqAaXplPhLfzFlNHZiSxWLIzs_71yWCLINI0WxC1wmGqw/viewform?usp=sf_link) 
+
+### Push to Github
+
+{{< code-action "Select Commit from the menu on the left." >}} Select all your updated files. **Be sure to include a descriptive commit message.**
+
+{{< figure src="images/courses/java/git_commit_1.png" width="40%">}}
+{{< code-action "Click Commit and Push" >}} 
+
+{{< figure src="images/courses/java/git_commit_2.png" width="40%">}}
+
+{{< code-action "Click Push" >}}  
+{{< figure src="images/courses/java/git_commit_3.png" width="40%">}}
+
+
+
+{{< /deliverables>}}
+<!-- 
 ## Extension: Brawler Game
 
 - Add a `power` attribute to the cat
@@ -59,7 +168,7 @@ Random rand = new Random();
 // Obtain a number between [0 - 49].
 int n = rand.nextInt(50);
 ```
-
+ -->
 
 
 <!-- 
