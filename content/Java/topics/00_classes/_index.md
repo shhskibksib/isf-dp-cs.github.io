@@ -146,6 +146,24 @@ Here is an overview of the Superhuman class.
 
 
 {{< /deliverables>}}
+
+
+- make new class Melee
+- create multiple supers inside main
+- create method fight() - older super wins, if same, no one wins
+- test out fight method with two super objects
+
+
+- add power and power_level
+- update fight() to use strength, and print out power
+
+
+- add level_up() to Super - if they win, level them up
+- add boolean attribute "dead" 
+
+
+
+
 <!-- 
 ## Extension: Brawler Game
 
