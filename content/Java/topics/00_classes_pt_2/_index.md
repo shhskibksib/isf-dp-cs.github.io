@@ -101,11 +101,15 @@ You will also need to update:
 - The method should increase `heroPoints` or `villainPoints`, depending on who won the fight.
 
 {{< code-action >}} **Be sure to thoroughly test `fight()` in the `main()` method.**
+
 ---
 
+
 ## [2] Sort the Superhumans
+
 
 {{< code-action >}} **In the `main()` method, create at least 10 `Superhuman`, and add 5 to each of the arrays, `villains` and `heroes`.**
 
 
 {{< code-action >}} **Add a method `sortSupers()`, that sorts the `Superhumans`.**
+
