@@ -147,7 +147,7 @@ Here is an overview of the Superhuman class.
 
 {{< /deliverables>}}
 
-
+<!-- 
 - make new class Melee
 - create multiple supers inside main
 - create method fight() - older super wins, if same, no one wins
@@ -159,7 +159,7 @@ Here is an overview of the Superhuman class.
 
 
 - add level_up() to Super - if they win, level them up
-- add boolean attribute "dead" 
+- add boolean attribute "dead"  -->
 
 
 

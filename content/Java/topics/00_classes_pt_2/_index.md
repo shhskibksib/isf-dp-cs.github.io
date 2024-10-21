@@ -56,21 +56,23 @@ Because the `main()` method is `static`, we can run it even before we have creat
 ### Attributes and Constructor
 
 {{< code-action >}} **Add the following attributes to the `Melee` class.**
- - `villains`: a java `array` of size 20, that holds `Superhuman` objects
- - `heroes`: a java `array` of size 20, that holds `Superhuman` objects
- - villainPoints: int        
- - heroPoints: int    
+ - `villains`: an `array` of size 20, that holds `Superhuman` objects
+ - `heroes`: an `array` of size 20, that holds `Superhuman` objects
+ - `villainPoints`: int        
+ - `heroPoints`: int    
 
- You can use Java arrays like this:
+**How to use arrays:**
  ```java
-int[] array = new int[20]; //create an array of integers
-array[0] = 8; //adds the integer 8 at index 0
+int[] myArray; // declare a new array variable
+myArray = new int[20]; //create an new array of integers and save it in your variable
+myArray[0] = 8; //adds the integer 8 at index 0
  ```
 
-{{< code-action >}} **Add the `constructor`.**
-The constructor method is the method that runs when a new object is created. Remember, the constructor method must have the **same name as the class**. Take a look at the constructor from the other classes for inspiration.
+{{< code-action >}} **Add a `constructor` to `Melee`.**   
 
-The `Melee` constructor should takes no parameters. It creates `villains` and `heroes`. It sets both`villainPoints` and `heroPoints` to zero. 
+The constructor is the method that runs when a new object is created. Remember, the constructor must have the **same name as the class**. Take a look at the constructor from the other classes in this lab for inspiration.
+
+The `Melee` constructor should takes no parameters. It creates arrays for `villains` and `heroes`. It sets both`villainPoints` and `heroPoints` to zero. 
 
 **Constructors automatically return an object of their class, so you don't need any return statement**
 
@@ -78,18 +80,22 @@ The `Melee` constructor should takes no parameters. It creates `villains` and `h
 
 ## [1] Fight
 
+### Add Attributes to  Superhuman 
 We want to make it so that two of the superhumans can fight. However, first we need to know how what power the superhuman has, and how strong they are:
 
 {{< code-action >}} **Add three attributes: `strength`, `powers`, and `isVillain`  to the `Superhuman` class.**
 
-`strength`: an `int` that stores how powerful they are
-`powers`: a `Strings` that stores the name of their power
+`strength`: an `int` that stores how powerful they are    
+`power`: a `String` that stores the name of their power   
 `isVillain`: a `boolean` that stores whether the super is a villain or not.
 
-You will also need to update:
-- The `Superhuman` constructor to include parameters for the new attributes
-- Create `accessors` and `mutators`  *(`getters`/`setters`)* for the new attributes
-- Update any `Superhuman` objects that you create to include these new attributes
+{{< code-action >}} **For each new attribute, create a setter and a getter (aka mutator and accessor).**
+
+{{< code-action >}} **Update the Superhuman constructor to include parameters for the new attributes.** You will also need to update any `Superhuman` objects that you create to include these new attributes.
+
+---
+
+### Add Fight method
 
 {{< code-action >}} **Add a method `fight()` to the `Melee` class.**
 
@@ -111,5 +117,30 @@ You will also need to update:
 {{< code-action >}} **In the `main()` method, create at least 10 `Superhuman`, and add 5 to each of the arrays, `villains` and `heroes`.**
 
 
-{{< code-action >}} **Add a method `sortSupers()`, that sorts the `Superhumans`.**
+{{< code-action >}} **Add a method `sortSupers()`, that sorts the `Superhumans` array based on their ages.**
 
+---
+
+## [3] Deliverables
+
+{{< deliverables>}}
+
+<!-- ### Fill in the Google Form 
+
+[✏️ It can be found here](https://docs.google.com/forms/d/e/1FAIpQLSfb4JqAaXplPhLfzFlNHZiSxWLIzs_71yWCLINI0WxC1wmGqw/viewform?usp=sf_link)  -->
+
+### Push to Github
+
+{{< code-action "Select Commit from the menu on the left." >}} Select all your updated files. **Be sure to include a descriptive commit message.**
+
+{{< figure src="images/courses/java/git_commit_1.png" width="40%">}}
+{{< code-action "Click Commit and Push" >}} 
+
+{{< figure src="images/courses/java/git_commit_2.png" width="40%">}}
+
+{{< code-action "Click Push" >}}  
+{{< figure src="images/courses/java/git_commit_3.png" width="40%">}}
+
+
+
+{{< /deliverables>}}
