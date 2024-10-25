@@ -150,12 +150,12 @@ classDiagram
         - mileage: int
         + Vehicle(plate: String, model: String, year: int)
         + increaseMileage(milesToAdd: int) : void
-        + getModel() : String
-        + setModel(model: String) : void
-        + getYear() : int
-        + setYear(year: int) : void
-        + getMileage() : int
-        + setMileage(mileage: int) : void
+        + getModel(): String
+        + setModel(model: String): void
+        + getYear(): int
+        + setYear(year: int): void
+        + getMileage(): int
+        + setMileage(mileage: int): void
     }
 {{< /mermaid >}}
 
