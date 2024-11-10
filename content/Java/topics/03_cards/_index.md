@@ -108,25 +108,57 @@ classDiagram
 
 It is your job to finish the Deck class according to the specifications.
 
+---
+
 ### Deck Constructor
-- initializes `cards` with all 52 cards from the deck
-- initializes `topCardIndex` to its starting value of 0
 
-The `topCardIndex` keeps track of which card is the current "top card".
+💻 **Complete the  constructor so it does 2 things:**
 
+#### 1️⃣ initialize `topCardIndex` to its starting value of 0
+> *The `topCardIndex` keeps track of which card is the current "top card".*
+
+#### 2️⃣ initialize `cards` with all 52 cards from the deck
+
+>To create all the cards in a deck, you can use nested for-loops to combine the 4 possible suit (❤️♠️♦️♣️) with the 13 possible ranks (1,2,3,4,5,6,7,8,9,10,11,12,13)
+>
+>Here is an example of using nested `for loops` to generate all possible weekday blocks:
+```java
+String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+int[] blocks = {1, 2, 3, 4, 5};
+
+for (int i = 0; i < days.length; i++) {
+    for (int j = 0; j < blocks.length; j++) {
+        System.out.println(days[i] + " block " + blocks[j]);
+    }
+}
+```
+
+---
 
 ### shuffle()
-- should randomly swap the order of the card objects in `cards`
 
-Here's how to randomly generate a number 0-10:
+💻 **Write a method `shuffle()` that randomly swaps the `card` objects inside the `cards` array**
+
+1️⃣ loop through every position `cards` array   
+2️⃣ each time you loop, randomly generate another location in the array, `rand_i`     
+3️⃣ swap the `card` located at `i` with the `card` located at `rand_i`    
+
+> Here's how to randomly generate a number 0-10:   
 ```java
 Random rand = new Random(); // you only need to run this once
 int randomIndex = rand.nextInt(10); //each time you need a new random number, run this line of code
 ```
 
+
+---
+
 ### dealCard()
-- if the topCardIndex isn't null, return the card at the top
-- else, return null
+💻 **Write a method `dealCard()` that returns the next `card` in the deck**
+
+1️⃣ if the `topCardIndex` isn't null, return the card there, then increase `topCardIndex` by 1   
+2️⃣ else, return `null`
+
+---
 
 ## [3] Java Arrays
 
