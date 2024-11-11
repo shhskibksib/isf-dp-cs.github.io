@@ -1,12 +1,12 @@
 ---
-title: "Cards" 
+title: "Posts" 
 bookFlatSection: false
 weight: 6
 # bookCollapseSection: true
-# draft: true
+draft: true
 ---
 
-# Cards
+# Posts
 This lab uses Java OOP principles. It emphasizes using class objects inside other classes.
 
 ---
@@ -37,19 +37,18 @@ https://github.com/isf-dp-cs/lab_cards_yourgithubusername
 The class Cards has already been written for you. It is a simplified version of the Cards you wrote last class. 
 
 {{< mermaid >}}
+
 classDiagram
-    class Card {
-		-String suit
-    	-int rank
-        + Card(suit: String, number: int, symbol: String)
-        + getSuit(): String
-        + setSuit(suit: String): void
-        + getRank(): int
-        + setRank(number: int): void
-		+ isEqual(otherCard: Card) boolean
-		+ isHigher(otherCard: Card) boolean
-		+ toString(): String
+    class Post:::someclass {
+		-String textContent
+        -String hashtag
+    	-int likes
+        -isPrivate boolean
+        + default constructor ()
+        + accessors and mutators methods()
     }
+    classDef someclass fill:#f96
+
 {{< /mermaid >}}
 
 There are a few main differences:
@@ -193,52 +192,7 @@ marks.length
 
 ---
 
-## [4] Game
-
-{{< mermaid >}}
-classDiagram
-    class Game {
-		-Deck deck;
-    	-Card[] playerHand;
-		-Card[] computerHand;
-        + Game()
-        + start(): void
-        + displayHand(Card[] hand): void
-		+ calculateScore(Card[] hand): int
-		+ sortPlayerHand(): void
-		+ sortComputerHand(): void
-		+ determineWinner(): void
-    }
-{{< /mermaid >}}
-
-### Player Hands
-
-Each player's hand should be an array of length 5
-
-###  start()
-
-This method should do the following:
-- shuffle the deck
-- give each player 5 cards
-
-### displayHand()
-This method should print out each element in the given hand
-
-## sortPlayerHand()
-Use bubble sort to sort the player's hand
-
-## sortComputerHand()
-Use selection sort to sort the player's hand
-
-## calculateScore()
-Calculate the sum of the ranks of all the cards in a player's hand.
-
-## determineWinner()
-Print out which player has a higher score, or print that its a tie.
-
----
-
-## [5] Deliverables
+## [4] Deliverables
 
 {{< deliverables>}}
 
