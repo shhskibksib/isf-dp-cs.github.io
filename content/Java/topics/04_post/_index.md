@@ -39,17 +39,81 @@ The class Cards has already been written for you. It is a simplified version of 
 {{< mermaid >}}
 
 classDiagram
-    class Post:::someclass {
-		-String textContent
-        -String hashtag
-    	-int likes
-        -isPrivate boolean
-        + default constructor ()
-        + accessors and mutators methods()
+    class Post {
+		- textContent: String
+        - hashtag: String 
+    	- likes: int 
+        - visibility: boolean
+        + default constructor()
+        + accessors and mutator methods  ()
     }
-    classDef someclass fill:#f96
 
 {{< /mermaid >}}
+
+{{< mermaid >}}
+
+classDiagram
+    class Profile {
+		- username: String
+        - firstName: String 
+    	- age: int 
+        - myPosts: Post[]
+        + Profile(String username, String firstName, int age)
+        + sortPosts() void
+        + accessors and mutator methods  ()
+    }
+
+{{< /mermaid >}}
+
+
+{{< columns >}}
+```java
+public class Student {
+	// attributes 
+    private String name;
+    private String[] subjects;
+
+	//constructor
+    public Student(String name, String[] subjects) {
+        this.name = name;
+        this.subjects = subjects;
+    }
+
+	//accessors and mutators
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String[] getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(String[] subjects) {
+        this.subjects = subjects;
+    }
+}
+```
+
+<--->
+
+{{< mermaid >}}
+classDiagram
+    class Student {
+		-String name
+    	-String[] subjects
+		+Student(String name, String[] subjects)
+        + getName(): String
+        + setName(name: String): void
+        + getSubjects(): String[]
+        + setSubjects(subjects: String[]): void
+    }
+{{< /mermaid >}}
+
+{{< /columns >}}
 
 There are a few main differences:
 

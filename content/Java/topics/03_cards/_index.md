@@ -102,7 +102,7 @@ classDiagram
     	-int topCardIndex;
         + Deck()
         + shuffle(): void
-        + dealCard(suit: String): Card
+        + dealCard(): Card
     }
 {{< /mermaid >}}
 
@@ -143,7 +143,7 @@ for (int i = 0; i < days.length; i++) {
 2️⃣ each time you loop, randomly generate another location in the array, `rand_i`     
 3️⃣ swap the `card` located at `i` with the `card` located at `rand_i`    
 
-> Here's how to randomly generate a number 0-10:   
+> Here's how to randomly generate a number 0-9:   
 ```java
 Random rand = new Random(); // you only need to run this once
 int randomIndex = rand.nextInt(10); //each time you need a new random number, run this line of code
@@ -215,25 +215,27 @@ classDiagram
 
 Each player's hand should be an array of length 5
 
+*Be careful! Any space in the array could be `null`*
+
 ###  start()
 
 This method should do the following:
-- shuffle the deck
+- shuffle the deck   
 - give each player 5 cards
 
 ### displayHand()
 This method should print out each element in the given hand
 
-## sortPlayerHand()
+### sortPlayerHand()
 Use bubble sort to sort the player's hand
 
-## sortComputerHand()
+### sortComputerHand()
 Use selection sort to sort the player's hand
 
-## calculateScore()
+### calculateScore()
 Calculate the sum of the ranks of all the cards in a player's hand.
 
-## determineWinner()
+### determineWinner()
 Print out which player has a higher score, or print that its a tie.
 
 ---
