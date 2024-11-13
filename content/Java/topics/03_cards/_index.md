@@ -217,6 +217,55 @@ Each player's hand should be an array of length 5
 
 *Be careful! Any space in the array could be `null`*
 
+### Avoiding Null
+Unfortunately, we can't guarantee that every space in the player's hand always has a card in it. What if you are playing a game like Uno, where players discard as they go?
+
+For example, imagine you are writing `calculateScore`:
+
+```java
+// Calculate the total score of a hand of cards
+public int calculateScore(Card[] hand) {
+	int score = 0;
+	for (int i = 0; i < hand.length; i++) {
+		Card card = hand[i];
+		score += card.getRank();
+	}
+	return score;
+}
+```
+
+If one of the spaces in `hand` is `null`, but you call a method like `getRank` anyway, you will get something called a `NullPointerException`. Here are two ways to avoid a `NullPointerException`:
+
+#### Add in an `if` statement to test if the object is `null`:
+```java
+public int calculateScore(Card[] hand) {
+	int score = 0;
+	for (int i = 0; i < hand.length; i++) {
+		if(hand[i] != null) {
+			Card card = hand[i];
+			score += card.getRank();
+		}
+	}
+	return score;
+}
+```
+
+## While loop
+This approach only works if you know all the empty spaces will be **at the end** of your array:
+
+```java
+public int calculateScore(Card[] hand) {
+	int score = 0;
+	int i = 0;
+	while (i<hand.length && hand[i]!=null){
+		Card card = hand[i];
+		score += card.getRank();
+		i++;
+	}
+	return score;
+}
+```
+
 ###  start()
 
 This method should do the following:
@@ -237,6 +286,13 @@ Calculate the sum of the ranks of all the cards in a player's hand.
 
 ### determineWinner()
 Print out which player has a higher score, or print that its a tie.
+
+### determineHighestCard()
+Print out which player has a higher top card.
+
+- first, call the sort method for each hand
+- then, compare the highest card for each player
+- print out which player has the higher card, or print that its a tie.
 
 ---
 
