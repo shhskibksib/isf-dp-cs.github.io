@@ -278,8 +278,55 @@ This method should print out each element in the given hand
 ### sortPlayerHand()
 Use bubble sort to sort the player's hand
 
+{{< expand "Answer" >}}
+```java
+    public void sortPlayerHand(){
+        /* Use bubble sort to sort the player's hand */
+        
+        // loop for multiple passes through the array
+        for( int i = 0; i<playerHand.length-1; i++) {
+            // loop through the hand
+            for (int j = 0; j < playerHand.length - 1 && playerHand[j+1] != null ; j++) {
+                // check if neighboring cards are out of order
+                if (playerHand[j].getRank() > playerHand[j + 1].getRank()) {
+                    // swap the cards
+                    Card temp = playerHand[j + 1];
+                    playerHand[j + 1] = playerHand[j];
+                    playerHand[j] = temp;
+                }
+            }
+        }
+    }
+```
+{{< /expand >}}
+
 ### sortComputerHand()
 Use selection sort to sort the player's hand
+{{< expand "Answer" >}}
+```java
+    public void sortComputerHand(){
+        /* Use selection sort to sort the player's hand */
+
+        // loop through hand
+        for( int i = 0; i<computerHand.length && computerHand[i] != null; i++) {
+            // assume the current item is the minimum
+            int minIndex = i;
+            int minRank = computerHand[i].getRank();
+            // loop through remaining unsorted cards
+            for (int j = i+1; j < computerHand.length && computerHand[j] != null ; j++) {
+                if (computerHand[j].getRank() < minRank){
+                    minIndex = j;
+                    minRank = computerHand[j].getRank();
+                }
+            }
+        // swap the current card with the minimum card
+        Card temp = computerHand[minIndex];
+        computerHand[minIndex] = computerHand[i];
+        computerHand[i] = temp;
+        }
+    }
+```
+{{< /expand >}}
 
 ### calculateScore()
 Calculate the sum of the ranks of all the cards in a player's hand.
