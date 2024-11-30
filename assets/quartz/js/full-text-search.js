@@ -58,4 +58,12 @@
     const finalResults = [...allIds].map(formatForDisplay)
     displayResults(term, finalResults, true)
   })
-})()
+})();
+adsfas = document.getElementsByClassName("danger")
+
+for (i = 0; i < adsfas.length; i++) {
+    console.log(adsfas[i]);
+    adsfas[i].style.backgroundColor = "rgba(0, 137, 0, 0.3)";
+}
+
+document.querySelector("body > header").style.position = "fixed";
